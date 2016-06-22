@@ -1,13 +1,21 @@
 {
   "resourceType": "Observation",
-  "id": "diplotype-call",
+  "id": "a-diplotype-call",
   "status": "final",
-  "code": {
-    "text": "Diplotype Call"
-  },
   "subject": {
     "reference": "Patient/pat2"
   },
+  "code": {
+    "text": "Diplotype Call",
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "363779003",
+        "display": "Genotype determination"
+      }
+    ]
+  },
+  "valueString": "*1/*1",
   "effectiveDateTime": "2016-06-21",
   "performer": [
     {
@@ -15,10 +23,19 @@
       "display": "Acme Laboratory, Inc"
     }
   ],
-  "valueString": "*1/*1",
   "component": [
     {
       "code": {
+        "text": "Gene",
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "67271001",
+            "display": "Gene"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
             "system": "http://www.genenames.org",
